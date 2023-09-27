@@ -1,105 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/dfaa803cd6.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div id="header">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="app">
+        <div class="header">
             <div class="container">
                 <nav>
                     <img src="images/logo.png" class="logo">
                     <ul>
+
                         <li><a href="../">Home</a></li>
-                        <li><a href="../profile/">profile</a></li>
+                        <li><a href="../profile/">Profile</a></li>
+                        <li><a href="../hometown/">Hometown</a></li>
                         <li><a href="../Food/">Food</a></li>
-                        <li><a href="../Tourist/">Tourist</a></li>
                     </ul>
                 </nav>
-                <div id="funfact">
-            <div class="container">
-                <h2 class="subtitel">Tourist</h1>
-                    <p>Recommendation Place</p>
-                <div class="funlist">
-                    <div class="sumur">
-                        <img src="images/danau_cermin.jpg">
-                        <div class="layer">
-                            <h3>Danau Labuan Cermin</h3>
-                            <p>Danau Labuan Cermin merupakan salah satu obyek wisata mempesona yang terletak di Desa 
-                                Biduk-Biduk, Kabupaten Berau, Propinsi Kalimantan Timur....
-                            </p>
-                            <a href="https://maps.app.goo.gl/nUckq4JanwffMfzH6"><i class="fa-solid fa-location-dot"></i></script></a>
-                        </div>
-                    </div>
-                    <div class="sumur">
-                        <img src="images/mangrove.jpg">
-                        <div class="layer">
-                            <h3>Mangrove Margomulyo</h3>
-                            <p>Hutan Mangrove Margomulyo adalah buatan warga sekitar yang dinamai Kelompok Tani Teian 
-                                Lestari yang bekerja sama dengan Balai Lingkungan Hidup...
-                            </p>
-                            <a href="https://maps.app.goo.gl/TbMYDWg4m3G5Uu7i7">
-                                <i class="fa-solid fa-location-dot"></i></script></a>
-                        </div>
-                    </div>
-                    <div class="sumur">
-                        <img src="images/pantai-lamaru.jpg">
-                        <div class="layer">
-                            <h3>Pantai Lamaru </h3>
-                            <p>  
-                                Pantai Lamaru merupakan salah satu obyek wisata andalan di Balikpapan, 
-                                Kalimantan Timur. Berada di Desa Teritip...
-                            </p>
-                            <a href="https://maps.app.goo.gl/H6rp49Ahm9YaDKux5"><i class="fa-solid fa-location-dot"></i></script></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="funlist">
-                    <div class="sumur">
-                        <img src="images/bukit-bangkirai.jpg">
-                        <div class="layer">
-                            <h3>Bukit Bangkirai</h3>
-                            <p>Bukit Bangkirai menawarkan hutan hujan tropis yang sangat alami dilengkapi dengan ragam sarana lengkap, seperti
-                                 restoran, lamin untuk pertemuan, kolam renang, hingga cottage maupun jungle cabin....
-                            </p>
-                            <a href="https://maps.app.goo.gl/hqpg63QMoSLZMnTCA"><i class="fa-solid fa-location-dot"></i></script></a>
-                        </div>
-                    </div>
-                    <div class="sumur">
-                        <img src="images/kebun-raya.jpg">
-                        <div class="layer">
-                            <h3>Kebun Raya Balikpapan</h3>
-                            <p>Lokasi Kebun Raya Balikpapan yang merupakan bagian kawasan yang berada di dalam kawasan Hutan Lindung Sungai Wain,
-                                ditunjuk sebagai Kawasan Hutan Dengan Tujuan Khusus (KDTK)...
-                            </p>
-                            <a href="https://maps.app.goo.gl/exHPyZrbHvEKNFgg8">
-                                <i class="fa-solid fa-location-dot"></i></script></a>
-                        </div>
-                    </div>
-                    <div class="sumur">
-                        <img src="images/bukit-batu.jpg">
-                        <div class="layer">
-                            <h3>Bukit Batu Dinding</h3>
-                            <p>Batu Dinding berada di Kota Minyak, Balikpapan. Tepatnya di Desa Bukit Merdeka, Kecamatan Samboja, 
-                                Kabupaten Kutai Kartanegara....
-                            </p>
-                            <a href="https://maps.app.goo.gl/yzFsvKSBrGdZGq5c7"><i class="fa-solid fa-location-dot"></i></script></a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-                <!-- <a id="scroll-btn" href="#about"></a> -->
+        <div class="cardList">
+            <button class="cardList__btn btn btn--left">
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#arrow-left"></use>
+                    </svg>
+                </div>
+            </button>
+
+            <div class="cards__wrapper">
+                <div class="card current--card">
+                    <div class="card__image">
+                        <img src="images/derawan.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="card next--card">
+                    <div class="card__image">
+                        <img src="images/danau_cermin.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="card previous--card">
+                    <div class="card__image">
+                        <img src="images/pantai-lamaru.jpg" alt="" />
+                    </div>
+                </div>
+                
+            </div>
+
+            <button class="cardList__btn btn btn--right">
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </div>
+            </button>
+        </div>
+
+        <div class="infoList">
+            <div class="info__wrapper">
+                <div class="info current--info">
+                    <h1 class="text name">Pulau Derawan</h1>
+                    <h4 class="text location">Borneo</h4>
+                    <p class="text description">Borneo's Paradise</p>
+                </div>
+
+                <div class="info next--info">
+                    <h1 class="text name">Labuan Cermin</h1>
+                    <h4 class="text location">Borneo</h4>
+                    <p class="text description">Adventure is never far away</p>
+                </div>
+
+                <div class="info previous--info">
+                    <h1 class="text name">Pantai Lamar</h1>
+                    <h4 class="text location">Balikpapan</h4>
+                    <p class="text description">Paradise Beach</p>
+                </div>
             </div>
         </div>
 
-        
-    </body>
+
+        <div class="app__bg">
+            <div class="app__bg__image current--image">
+                <img src="images/derawan.png" alt="" />
+            </div>
+            <div class="app__bg__image next--image">
+                <img src="images/danau_cermin.jpg" alt="" />
+            </div>
+            <div class="app__bg__image previous--image">
+                <img src="images/pantai-lamaru.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <div class="loading__wrapper">
+        <div class="loader--text">Loading...</div>
+        <div class="loader">
+            <span></span>
+        </div>
+    </div>
+
+
+    <svg class="icons" style="display: none;">
+        <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+            <polyline points='328 112 184 256 328 400'
+                style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+        </symbol>
+        <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+            <polyline points='184 112 328 256 184 400'
+                style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+        </symbol>
+    </svg>
+
+
+    <script src="js/imagesLoaded.pkgd.min.js"></script>
+    <script src="js/softripple.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
 </html>
-
-
-

@@ -127,24 +127,7 @@ mark {
     }
   }
 
-.gambar1{
-    /* position: relative; */
-    /* overflow: hidden; */
-    margin-left: 1000px;
-    margin-top: -725px;
-}
 
-.balikpapan{
-    margin-left: 250px;
-    margin-top: -340px;
-}
-
-.balikpapan img {
-    /* width: 504px;
-    height: 672px; */
-    scale:calc(0.85);
-    border-radius: 10%;
-}
 
 .subtitel{
     font-size: 60px;
