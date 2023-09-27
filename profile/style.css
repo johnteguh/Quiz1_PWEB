@@ -254,3 +254,11 @@ a#scroll-btn {
     letter-spacing: 3px;
     font-weight: 600;
   }
+
+.kol2 .icon{
+    cursor: pointer;
+        position: relative;
+        scale: calc(0.2);
+        bottom: 75px;
+        right: 90px;
+  }
