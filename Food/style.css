@@ -1,72 +1,200 @@
+@font-face{
+    font-family: 'gons';
+    src:url(font/Gontserrat-SemiBold.ttf)
+}
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'gons', sans-serif;
     box-sizing: border-box;
+}
 
-}
-body{
-    background: #080808;
-    color: #fff;
-}
-#header{
+.container{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.png);
-    background-size: cover;
-    background-position: center;
-}
-.container{
-    padding: 10px 10%;
-}
-
-nav{
+    background: #171717;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.logo{
+.logo {
     width: 140px;
+    margin: 20px; /* Berikan margin pada semua sisi untuk menjauhkan logo dari konten tengah */
+    position: absolute;
+    top: -25px; /* Mengatur posisi vertikal ke atas */
+    right: 1350px; /* Mengatur posisi horizontal ke kiri */
 }
 
-nav ul li{
-    display: inline-block;
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Mengatur agar menu navigasi berada di kanan atas */
+    flex-wrap: wrap;
+    position: absolute;
+    top: 35px; /* Mengatur posisi vertikal ke atas */
+    right: 250px; /* Mengatur posisi horizontal ke kanan */
+    font-family: 'gons', sans-serif;
+}
+
+nav ul {
     list-style: none;
-    margin: 10px 20px;
+    font-family: 'gons', sans-serif;
 }
 
-nav ul li a{
+nav ul li {
+    display: inline-block;
+    margin-left: 20px; /* Memberikan jarak horizontal antara elemen-elemen */
+    font-family: 'gons',sans-serif;
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Menghapus margin-left pada elemen pertama */
+}
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-family: 'gons', sans-serif;
+    font-size: 20px;
     position: relative;
 }
-nav ul li a::after{
+
+nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #fff;
+    background: #009fe3;
     position: absolute;
     left: 0;
     bottom: -6px;
     transition: 0.5s;
 }
 
-nav ul li a:hover::after{
+nav ul li a:hover::after {
     width: 100%;
 }
 
-.header-text{
-    margin-top: 20%;
-    font-size: 30px;
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.header-text h1{
+.img-box{
+    width: 75px;
+    height: 500px;
+    margin: 25px;
+    border-radius: 50px;
+    background: url(images/kenari.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+}
+
+.img-box:nth-child(2){
+    background: url(images/mantau.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box:nth-child(3){
+    background: url(images/amplang.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box:nth-child(4){
+    background: url(images/nasi-bakar-seafood.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(5){
+    background: url(images/pisang-gapit.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box h3{
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.7s;
+}
+
+.img-box:hover{
+    width: 500px;
+    cursor: pointer;
+}
+
+.img-box:hover h3{
+    opacity: 1;
+    bottom: 50px;
+    /* position: center; */
+}
+
+.img-box p{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.7s;
+    font-size: 10px;
+}
+
+.img-box:hover p{
+    opacity: 1;
+    bottom: 20px;
+    /* position: center; */
+}
+
+.head-text{
+    /* margin-top: 10%; */
+    position: absolute;
+    /* margin: 175px 50px; */
+    top: 750px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.head-text h1{
     font-size: 60px;
     margin-top: 20px;
 }
-.header-text h1 span{
-    color: #ff004f;
+.head-text h1 mark{
+    color: #ffffff;
+    /* -webkit-text-stroke: 2px #fff; */
 }
+
+.head-text p{
+    position: absolute;
+    /* text-align: center; */
+    right:-10px;
+}
+
+mark {
+    -webkit-animation: 1.5s highlight 1.5s 1 normal forwards;
+            animation: 1.5s highlight 1.5s 1 normal forwards;
+    background-color: none;
+    background: linear-gradient(90deg, #009fe3 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 200% 100%;
+    background-position: 100.5% 0;
+  }
+  
+  @-webkit-keyframes highlight {
+    to {
+      background-position: 0 0;
+    }
+  }
+  
+  @keyframes highlight {
+    to {
+      background-position: 0 0;
+    }
+  }
